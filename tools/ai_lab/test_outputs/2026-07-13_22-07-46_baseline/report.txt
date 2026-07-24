@@ -1,0 +1,21 @@
+--- AI AUDIO LABORATORY: OPTIMIZATION RUN ---
+Started at: 2026-07-13 22:07:46.035586
+Generating LAME Ground Truth...
+
+Starting Differential Evolution Optimizer...
+Using multi-dimensional AI Ear: 2D Spec MSE + Envelope Correlation + SNR
+[1] NEW BEST: Score=1558.87 | SpecMSE=1140.10, EnvCorr=0.112
+      Params: ['25.404', '6.499', '50.040', '1.573', '1.903', '0.060', '2.735']
+
+=======================================================
+OPTIMIZATION FINISHED!
+Best Objective Score: 1558.87
+Optimal Parameters for C++:
+  tmn               = 16.546f;
+  nmt               = 9.711f;
+  ath_shift         = 55.020f;
+  spread_up_slope   = 1.743f;
+  spread_down_slope = 1.477f;
+  fwd_decay         = 0.060f;
+  pre_echo_mult1    = 2.055f;
+=======================================================
