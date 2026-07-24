@@ -1,6 +1,6 @@
 # Audio-IO Library
 
-[![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)](https://github.com/KernelMeltdown/audio-io)
+[![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)](https://github.com/Strg-Alt-Entf-0x00/audio-io)
 [![License](https://img.shields.io/badge/license-Proprietary-red.svg)](LICENSE)
 [![C++](https://img.shields.io/badge/C++-20-orange.svg)](https://isocpp.org/)
 [![Platform](https://img.shields.io/badge/platform-Windows-lightgrey.svg)](https://www.microsoft.com/windows)
