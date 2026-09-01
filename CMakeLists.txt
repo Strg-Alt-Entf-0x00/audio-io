@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.20)
+cmake_minimum_required(VERSION 3.21)
 project(audio-io VERSION 1.0.0 LANGUAGES CXX)
 
 # C++20 required
@@ -151,12 +151,17 @@ install(FILES
     DESTINATION lib/cmake/audio-io
 )
 
-# Optional: Build tests
-option(AUDIO_IO_BUILD_TESTS "Build audio-io tests" ON)
+# Optional: Build tests (auto-disabled when used as subdirectory/FetchContent)
+option(AUDIO_IO_BUILD_TESTS "Build audio-io tests" ${PROJECT_IS_TOP_LEVEL})
 
 if(AUDIO_IO_BUILD_TESTS)
     add_subdirectory(tests)
 endif()
 
-# Build tools
-add_subdirectory(tools)
+# Optional: Build CLI tools (auto-disabled when used as subdirectory/FetchContent)
+option(AUDIO_IO_BUILD_TOOLS "Build audio-io CLI tools" ${PROJECT_IS_TOP_LEVEL})
+
+if(AUDIO_IO_BUILD_TOOLS)
+    add_subdirectory(tools)
+endif()
+
